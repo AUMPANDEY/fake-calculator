@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .sec-main {
+        width: 50vw;
+        height: 80vh;
+        background: linear-gradient(145deg, cyan, teal);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .screen {
+        width: 100%;
+        height: 20%;
+        background-color: rgba(0, 0, 0, 0.227);
+        border: 1px solid #000;
+        /* cursor: text; */
+      }
+      .btn-sec {
+        display: flex;
+        gap: 20px;
+        /* width: 100%; */
+        /* height: 60%; */
+      }
+      .btns {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2vw;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: teal;
+        font-weight: 900;
+        border-radius: 10px;
+        border: 1px solid rgb(0, 84, 84);
+        cursor: pointer;
+      }
+      .nos {
+        width: 45%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        /* border: 1px solid red; */
+      }
+      .cont{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 100px;
+        /* border: 1px solid red; */
+
+      }
+      .br-20 {
+        border-radius: 20px;
+      }
+      .opr-box {
+        width: 55%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px 100px;
+        grid-gap: 20px;
+        gap: 10px;
+        /* border: 1px solid red; */
+      }
+      .btn2 {
+        width: 100px;
+        height: 210px;
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2vw;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: teal;
+        font-weight: 900;
+        border-radius: 10px;
+        border: 1px solid rgb(0, 84, 84);
+        cursor: pointer;
+        top: 10px;
+      }
+      .btn3 {
+        width: 210px;
+        height: 100px;
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2vw;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: teal;
+        font-weight: 900;
+        border-radius: 10px;
+        border: 1px solid rgb(0, 84, 84);
+        cursor: pointer;
+        position: relative;
+        left: 0px;
+        /* top: 10px; */
+      }
+      .btn4 {
+        width: 320px;
+        height: 100px;
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2vw;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: teal;
+        font-weight: 900;
+        border-radius: 10px;
+        border: 1px solid rgb(0, 84, 84);
+        cursor: pointer;
+        position: relative;
+        left: 0px;
+        top: 110px;
+      }
+      .btn-id3{
+        left: -110px;
+        top: 110px;
+      }
+      .op div{
+        transition: 0.2s ease-in-out;
+        opacity: 0.85;
+      }
+      .op div:hover{
+        background-color: rgb(0, 198, 198);
+        color: rgb(0, 143, 143);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="sec-main br-20">
+        <div class="screen br-20"></div>
+        <div class="cont">
+          <div class="nos">
+            <div class="btn-sec op">
+              <div class="btns">1</div>
+              <div class="btns">2</div>
+              <div class="btns">3</div>
+            </div>
+            <div class="btn-sec op">
+              <div class="btns">4</div>
+              <div class="btns">5</div>
+              <div class="btns">6</div>
+            </div>
+            <div class="btn-sec op">
+              <div class="btns">7</div>
+              <div class="btns">8</div>
+              <div class="btns">9</div>
+            </div>
+            <div class="btn-sec op keys">
+                <div class="btns">AC</div>
+                <div class="btns">0</div>
+                <div class="btns">&#60;-</div>
+              </div>
+          </div>
+          <div class="opr-box op">
+            <div class="btns">+</div>
+            <div class="btns">x</div>
+            <div class="btns">/</div>
+            <div class="btn2">-</div>
+            <div class="btn3">root</div>
+            <div class="btn3 btn-id3">%</div>
+            <!-- <div class="btn4"> ------------------------ <br> ------------------------ </div> -->
+             <div class="btn4">=</div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
